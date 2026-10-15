@@ -33,3 +33,32 @@ ToySequenceController_t all_squences[] = {
 * **MODE_TEASE:** Small, quick alternating movements (400 steps back and forth)
 * **MODE_CHASE:** Long sweep in random direction (700 steps)
 * **MODE_FULL_LAP:** One complete 360-degree rotation (4096 steps).
+
+
+## Hardware & Components
+
+- **Microcontroller:** STM32L433
+- **Motor Driver:** ULN2003 (5V)
+- **Stepper Motor:** 28BYJ-48
+- **Power Supply:** 6xAA 1.5V batteries
+- **Voltage Regulator:** MB102 Power Supply Module (9V input, 5V output)
+- **CAD Files:** Available in the `cad/` directory (.step files)
+
+## Pinout 
+
+Connect the STM32L433 to the ULN2003 motor driver according to the table below:
+
+| STM32 Pin | ULN2003 Driver Pin |
+| :--- | :--- |
+| **PC0** | IN4 | 
+| **PC1** | IN3 | 
+| **PC2** | IN2 | 
+| **PC3** | IN1 | 
+
+
+## Power Distribution
+
+- **9V Input:** MB102 DC Jack (Power from 6x AA batteries)
+- **STM32L433 (5V):** Connected to VIN from MB102 module (*Sidenote: check input configuration on the STM32L433*)
+- **ULN2003 (5V):** Connected to VCC from MB102 module
+- **Ground (GND):** Common Ground across all components
