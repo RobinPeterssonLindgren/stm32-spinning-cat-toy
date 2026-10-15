@@ -61,4 +61,4 @@ Connect the STM32L433 to the ULN2003 motor driver according to the table below:
 - **9V Input:** MB102 DC Jack (Power from 6x AA batteries)
 - **STM32L433 (5V):** Connected to VIN from MB102 module (*Sidenote: check input configuration on the STM32L433*)
 - **ULN2003 (5V):** Connected to VCC from MB102 module
-- **Ground (GND):** Common Ground across all components
+- **Ground (GND):** Common Ground across all components from the MB102 Module
