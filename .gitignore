@@ -1,3 +1,16 @@
+# Build for STM32CubeIDE
+Debug/
+Release/
+
+# Eclipse / STM32CubeIDE local settings
+.metadata/
+*.launch
+*.log
+
+# OS-specifika skräpfiler
+.DS_Store
+Thumbs.db
+
 # Prerequisites
 *.d
 
@@ -35,6 +48,7 @@
 *.i*86
 *.x86_64
 *.hex
+*.bin
 
 # Debug files
 *.dSYM/
